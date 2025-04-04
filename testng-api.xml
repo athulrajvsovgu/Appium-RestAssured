@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="API TestSuite" thread-count="2" parallel="tests">
+  
+  <listeners>
+  	<listener class-name="com.framework.utils.ExtentReporter" />
+  </listeners>
+  
+  <test name="Product Tests">
+    <classes>
+      <class name="com.framework.apiTestCases.ProductTests"/>
+    </classes>
+  </test> 
+  
+  <test name="User Tests">
+    <classes>
+      <class name="com.framework.apiTestCases.UserTests"/>
+    </classes>
+  </test>
+  
+    <test name="Cart Tests">
+    <classes>
+      <class name="com.framework.apiTestCases.CartTests"/>
+    </classes>
+  </test>
+  
+  <test name="Auth Tests">
+    <classes>
+      <class name="com.framework.apiTestCases.LoginTests"/>
+    </classes>
+  </test>
+  
+    <test name="Schema Tests">
+    <classes>
+      <class name="com.framework.apiTestCases.SchemaTests"/>
+    </classes>
+  </test>
+</suite> 

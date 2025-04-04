@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+
+<groups>
+    <run>
+      <include name="Smoke"/>
+    </run>
+  </groups>
+
+<listeners>
+<listener class-name="com.framework.testUtils.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="End to end Framework Test">
+    <classes>
+      <class name="com.framework.appiumTestCases.eCommerce_tc_4_Hybrid"/>     
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Error Validations Test">
+    <classes>
+      <class name="com.framework.appiumTestCases.eCommerce_tc_2"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

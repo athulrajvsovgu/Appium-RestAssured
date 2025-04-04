@@ -1,0 +1,8 @@
+/target/
+/bin/
+/.classpath
+/.project
+/.mvn
+/.settings
+/src/site
+/allure-results/

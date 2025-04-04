@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="31" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-04T23:58:07 CEST" name="API TestSuite" finished-at="2025-04-04T23:58:24 CEST" duration-ms="16636">
+    <groups>
+    </groups>
+    <test started-at="2025-04-04T23:58:07 CEST" name="User Tests" finished-at="2025-04-04T23:58:15 CEST" duration-ms="7598">
+      <class name="com.framework.apiTestCases.UserTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:07 CEST" name="setup" finished-at="2025-04-04T23:58:08 CEST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateUser()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:08 CEST" name="testCreateUser" finished-at="2025-04-04T23:58:10 CEST" duration-ms="1889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method signature="testDeleteUser()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:10 CEST" name="testDeleteUser" finished-at="2025-04-04T23:58:11 CEST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method signature="testGetAllUsers()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:11 CEST" name="testGetAllUsers" finished-at="2025-04-04T23:58:11 CEST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllUsers -->
+        <test-method signature="testGetUserById()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:11 CEST" name="testGetUserById" finished-at="2025-04-04T23:58:12 CEST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserById -->
+        <test-method signature="testGetUsersSorted()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:12 CEST" name="testGetUsersSorted" finished-at="2025-04-04T23:58:13 CEST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersSorted -->
+        <test-method signature="testGetUsersSortedAsc()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:13 CEST" name="testGetUsersSortedAsc" finished-at="2025-04-04T23:58:14 CEST" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersSortedAsc -->
+        <test-method signature="testGetUsersWithLimit()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:14 CEST" name="testGetUsersWithLimit" finished-at="2025-04-04T23:58:14 CEST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersWithLimit -->
+        <test-method signature="testUpdateUser()[pri:0, instance:com.framework.apiTestCases.UserTests@266374ef]" started-at="2025-04-04T23:58:14 CEST" name="testUpdateUser" finished-at="2025-04-04T23:58:15 CEST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+      </class> <!-- com.framework.apiTestCases.UserTests -->
+    </test> <!-- User Tests -->
+    <test started-at="2025-04-04T23:58:07 CEST" name="Product Tests" finished-at="2025-04-04T23:58:16 CEST" duration-ms="8183">
+      <class name="com.framework.apiTestCases.ProductTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:07 CEST" name="setup" finished-at="2025-04-04T23:58:08 CEST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddNewProduct()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:08 CEST" name="testAddNewProduct" finished-at="2025-04-04T23:58:08 CEST" duration-ms="110" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "45,33"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "45,33"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:944)
+at com.framework.payloads.Payload.productPayload(Payload.java:56)
+at com.framework.apiTestCases.ProductTests.testAddNewProduct(ProductTests.java:146)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testDeleteProduct()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:08 CEST" name="testDeleteProduct" finished-at="2025-04-04T23:58:10 CEST" duration-ms="1876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method signature="testGetAllCategories()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:10 CEST" name="testGetAllCategories" finished-at="2025-04-04T23:58:10 CEST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllCategories -->
+        <test-method signature="testGetAllProducts()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:10 CEST" name="testGetAllProducts" finished-at="2025-04-04T23:58:11 CEST" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllProducts -->
+        <test-method signature="testGetLimitedProducts()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:11 CEST" name="testGetLimitedProducts" finished-at="2025-04-04T23:58:12 CEST" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLimitedProducts -->
+        <test-method signature="testGetProductsByCategory()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:12 CEST" name="testGetProductsByCategory" finished-at="2025-04-04T23:58:13 CEST" duration-ms="1185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProductsByCategory -->
+        <test-method signature="testGetSingleProductById()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:13 CEST" name="testGetSingleProductById" finished-at="2025-04-04T23:58:14 CEST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSingleProductById -->
+        <test-method signature="testGetSortedProducts()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:14 CEST" name="testGetSortedProducts" finished-at="2025-04-04T23:58:15 CEST" duration-ms="1394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSortedProducts -->
+        <test-method signature="testGetSortedProductsAsc()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:15 CEST" name="testGetSortedProductsAsc" finished-at="2025-04-04T23:58:16 CEST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSortedProductsAsc -->
+        <test-method signature="testUpdateProduct()[pri:0, instance:com.framework.apiTestCases.ProductTests@3336e6b6]" started-at="2025-04-04T23:58:16 CEST" name="testUpdateProduct" finished-at="2025-04-04T23:58:16 CEST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "38,71"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "38,71"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:944)
+at com.framework.payloads.Payload.productPayload(Payload.java:56)
+at com.framework.apiTestCases.ProductTests.testUpdateProduct(ProductTests.java:172)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+      </class> <!-- com.framework.apiTestCases.ProductTests -->
+    </test> <!-- Product Tests -->
+    <test started-at="2025-04-04T23:58:16 CEST" name="Auth Tests" finished-at="2025-04-04T23:58:17 CEST" duration-ms="1759">
+      <class name="com.framework.apiTestCases.LoginTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.apiTestCases.LoginTests@55c53a33]" started-at="2025-04-04T23:58:16 CEST" name="setup" finished-at="2025-04-04T23:58:16 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.framework.apiTestCases.LoginTests@55c53a33]" started-at="2025-04-04T23:58:16 CEST" name="testInvalidUserLogin" finished-at="2025-04-04T23:58:17 CEST" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserLogin -->
+        <test-method signature="testValidUserLogin()[pri:0, instance:com.framework.apiTestCases.LoginTests@55c53a33]" started-at="2025-04-04T23:58:17 CEST" name="testValidUserLogin" finished-at="2025-04-04T23:58:17 CEST" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidUserLogin -->
+      </class> <!-- com.framework.apiTestCases.LoginTests -->
+    </test> <!-- Auth Tests -->
+    <test started-at="2025-04-04T23:58:17 CEST" name="Schema Tests" finished-at="2025-04-04T23:58:20 CEST" duration-ms="2953">
+      <class name="com.framework.apiTestCases.SchemaTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.apiTestCases.SchemaTests@27e47833]" started-at="2025-04-04T23:58:17 CEST" name="setup" finished-at="2025-04-04T23:58:17 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCartSchema()[pri:0, instance:com.framework.apiTestCases.SchemaTests@27e47833]" started-at="2025-04-04T23:58:17 CEST" name="testCartSchema" finished-at="2025-04-04T23:58:18 CEST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartSchema -->
+        <test-method signature="testProductSchema()[pri:0, instance:com.framework.apiTestCases.SchemaTests@27e47833]" started-at="2025-04-04T23:58:18 CEST" name="testProductSchema" finished-at="2025-04-04T23:58:19 CEST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductSchema -->
+        <test-method signature="testUserSchema()[pri:0, instance:com.framework.apiTestCases.SchemaTests@27e47833]" started-at="2025-04-04T23:58:19 CEST" name="testUserSchema" finished-at="2025-04-04T23:58:20 CEST" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserSchema -->
+      </class> <!-- com.framework.apiTestCases.SchemaTests -->
+    </test> <!-- Schema Tests -->
+    <test started-at="2025-04-04T23:58:15 CEST" name="Cart Tests" finished-at="2025-04-04T23:58:24 CEST" duration-ms="8846">
+      <class name="com.framework.apiTestCases.CartTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:15 CEST" name="setup" finished-at="2025-04-04T23:58:15 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateCart()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:15 CEST" name="testCreateCart" finished-at="2025-04-04T23:58:16 CEST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCart -->
+        <test-method signature="testDeleteCart()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:16 CEST" name="testDeleteCart" finished-at="2025-04-04T23:58:16 CEST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteCart -->
+        <test-method signature="testGetAllCarts()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:16 CEST" name="testGetAllCarts" finished-at="2025-04-04T23:58:17 CEST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllCarts -->
+        <test-method signature="testGetCartById()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:17 CEST" name="testGetCartById" finished-at="2025-04-04T23:58:18 CEST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCartById -->
+        <test-method signature="testGetCartsByDateRange()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:18 CEST" name="testGetCartsByDateRange" finished-at="2025-04-04T23:58:19 CEST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCartsByDateRange -->
+        <test-method signature="testGetCartsSorted()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:19 CEST" name="testGetCartsSorted" finished-at="2025-04-04T23:58:20 CEST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCartsSorted -->
+        <test-method signature="testGetCartsSortedAsc()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:20 CEST" name="testGetCartsSortedAsc" finished-at="2025-04-04T23:58:22 CEST" duration-ms="2254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCartsSortedAsc -->
+        <test-method signature="testGetCartsWithLimit()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:22 CEST" name="testGetCartsWithLimit" finished-at="2025-04-04T23:58:22 CEST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCartsWithLimit -->
+        <test-method signature="testGetUserCart()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:22 CEST" name="testGetUserCart" finished-at="2025-04-04T23:58:23 CEST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserCart -->
+        <test-method signature="testUpdateCart()[pri:0, instance:com.framework.apiTestCases.CartTests@48c76607]" started-at="2025-04-04T23:58:23 CEST" name="testUpdateCart" finished-at="2025-04-04T23:58:24 CEST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateCart -->
+      </class> <!-- com.framework.apiTestCases.CartTests -->
+    </test> <!-- Cart Tests -->
+  </suite> <!-- API TestSuite -->
+</testng-results>

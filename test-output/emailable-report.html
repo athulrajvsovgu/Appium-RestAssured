@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">API TestSuite</th></tr>
+<tr><td><a href="#t0">User Tests</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7.598</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Product Tests</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">8.183</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Auth Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1.759</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Schema Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2.953</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Cart Tests</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8.846</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">31</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">29.339</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">API TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.framework.apiTestCases.UserTests</td><td><a href="#m0">testCreateUser</a></td><td rowspan="1">1743803888213</td><td rowspan="1">1889</td></tr><tr class="passedeven"><td><a href="#m1">testDeleteUser</a></td><td rowspan="1">1743803890106</td><td rowspan="1">1183</td></tr><tr class="passedeven"><td><a href="#m2">testGetAllUsers</a></td><td rowspan="1">1743803891291</td><td rowspan="1">552</td></tr><tr class="passedeven"><td><a href="#m3">testGetUserById</a></td><td rowspan="1">1743803891846</td><td rowspan="1">1143</td></tr><tr class="passedeven"><td><a href="#m4">testGetUsersSorted</a></td><td rowspan="1">1743803892992</td><td rowspan="1">548</td></tr><tr class="passedeven"><td><a href="#m5">testGetUsersSortedAsc</a></td><td rowspan="1">1743803893542</td><td rowspan="1">587</td></tr><tr class="passedeven"><td><a href="#m6">testGetUsersWithLimit</a></td><td rowspan="1">1743803894130</td><td rowspan="1">680</td></tr><tr class="passedeven"><td><a href="#m7">testUpdateUser</a></td><td rowspan="1">1743803894811</td><td rowspan="1">624</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Product Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.framework.apiTestCases.ProductTests</td><td><a href="#m8">testAddNewProduct</a></td><td rowspan="1">1743803888213</td><td rowspan="1">110</td></tr><tr class="failedeven"><td><a href="#m9">testUpdateProduct</a></td><td rowspan="1">1743803896020</td><td rowspan="1">2</td></tr><tr><th colspan="4">Product Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.framework.apiTestCases.ProductTests</td><td><a href="#m10">testDeleteProduct</a></td><td rowspan="1">1743803888419</td><td rowspan="1">1876</td></tr><tr class="passedeven"><td><a href="#m11">testGetAllCategories</a></td><td rowspan="1">1743803890297</td><td rowspan="1">462</td></tr><tr class="passedeven"><td><a href="#m12">testGetAllProducts</a></td><td rowspan="1">1743803890762</td><td rowspan="1">479</td></tr><tr class="passedeven"><td><a href="#m13">testGetLimitedProducts</a></td><td rowspan="1">1743803891243</td><td rowspan="1">1166</td></tr><tr class="passedeven"><td><a href="#m14">testGetProductsByCategory</a></td><td rowspan="1">1743803892412</td><td rowspan="1">1185</td></tr><tr class="passedeven"><td><a href="#m15">testGetSingleProductById</a></td><td rowspan="1">1743803893598</td><td rowspan="1">449</td></tr><tr class="passedeven"><td><a href="#m16">testGetSortedProducts</a></td><td rowspan="1">1743803894049</td><td rowspan="1">1394</td></tr><tr class="passedeven"><td><a href="#m17">testGetSortedProductsAsc</a></td><td rowspan="1">1743803895449</td><td rowspan="1">570</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Auth Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.framework.apiTestCases.LoginTests</td><td><a href="#m18">testInvalidUserLogin</a></td><td rowspan="1">1743803896049</td><td rowspan="1">1180</td></tr><tr class="passedeven"><td><a href="#m19">testValidUserLogin</a></td><td rowspan="1">1743803897231</td><td rowspan="1">572</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Schema Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.framework.apiTestCases.SchemaTests</td><td><a href="#m20">testCartSchema</a></td><td rowspan="1">1743803897827</td><td rowspan="1">770</td></tr><tr class="passedeven"><td><a href="#m21">testProductSchema</a></td><td rowspan="1">1743803898599</td><td rowspan="1">470</td></tr><tr class="passedeven"><td><a href="#m22">testUserSchema</a></td><td rowspan="1">1743803899070</td><td rowspan="1">1705</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Cart Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">com.framework.apiTestCases.CartTests</td><td><a href="#m23">testCreateCart</a></td><td rowspan="1">1743803895633</td><td rowspan="1">491</td></tr><tr class="passedeven"><td><a href="#m24">testDeleteCart</a></td><td rowspan="1">1743803896127</td><td rowspan="1">701</td></tr><tr class="passedeven"><td><a href="#m25">testGetAllCarts</a></td><td rowspan="1">1743803896830</td><td rowspan="1">1002</td></tr><tr class="passedeven"><td><a href="#m26">testGetCartById</a></td><td rowspan="1">1743803897833</td><td rowspan="1">580</td></tr><tr class="passedeven"><td><a href="#m27">testGetCartsByDateRange</a></td><td rowspan="1">1743803898422</td><td rowspan="1">1173</td></tr><tr class="passedeven"><td><a href="#m28">testGetCartsSorted</a></td><td rowspan="1">1743803899596</td><td rowspan="1">576</td></tr><tr class="passedeven"><td><a href="#m29">testGetCartsSortedAsc</a></td><td rowspan="1">1743803900174</td><td rowspan="1">2254</td></tr><tr class="passedeven"><td><a href="#m30">testGetCartsWithLimit</a></td><td rowspan="1">1743803902430</td><td rowspan="1">539</td></tr><tr class="passedeven"><td><a href="#m31">testGetUserCart</a></td><td rowspan="1">1743803902971</td><td rowspan="1">557</td></tr><tr class="passedeven"><td><a href="#m32">testUpdateCart</a></td><td rowspan="1">1743803903530</td><td rowspan="1">947</td></tr></tbody>
+</table>
+<h2>User Tests</h2><h3 id="m0">com.framework.apiTestCases.UserTests#testCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.framework.apiTestCases.UserTests#testDeleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.framework.apiTestCases.UserTests#testGetAllUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.framework.apiTestCases.UserTests#testGetUserById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.framework.apiTestCases.UserTests#testGetUsersSorted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.framework.apiTestCases.UserTests#testGetUsersSortedAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.framework.apiTestCases.UserTests#testGetUsersWithLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.framework.apiTestCases.UserTests#testUpdateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Product Tests</h2><h3 id="m8">com.framework.apiTestCases.ProductTests#testAddNewProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;45,33&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:944)
+	at com.framework.payloads.Payload.productPayload(Payload.java:56)
+	at com.framework.apiTestCases.ProductTests.testAddNewProduct(ProductTests.java:146)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.framework.apiTestCases.ProductTests#testUpdateProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;38,71&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:944)
+	at com.framework.payloads.Payload.productPayload(Payload.java:56)
+	at com.framework.apiTestCases.ProductTests.testUpdateProduct(ProductTests.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.framework.apiTestCases.ProductTests#testDeleteProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.framework.apiTestCases.ProductTests#testGetAllCategories</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.framework.apiTestCases.ProductTests#testGetAllProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.framework.apiTestCases.ProductTests#testGetLimitedProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.framework.apiTestCases.ProductTests#testGetProductsByCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.framework.apiTestCases.ProductTests#testGetSingleProductById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.framework.apiTestCases.ProductTests#testGetSortedProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.framework.apiTestCases.ProductTests#testGetSortedProductsAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Auth Tests</h2><h3 id="m18">com.framework.apiTestCases.LoginTests#testInvalidUserLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.framework.apiTestCases.LoginTests#testValidUserLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Schema Tests</h2><h3 id="m20">com.framework.apiTestCases.SchemaTests#testCartSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.framework.apiTestCases.SchemaTests#testProductSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.framework.apiTestCases.SchemaTests#testUserSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cart Tests</h2><h3 id="m23">com.framework.apiTestCases.CartTests#testCreateCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.framework.apiTestCases.CartTests#testDeleteCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.framework.apiTestCases.CartTests#testGetAllCarts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.framework.apiTestCases.CartTests#testGetCartById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.framework.apiTestCases.CartTests#testGetCartsByDateRange</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.framework.apiTestCases.CartTests#testGetCartsSorted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.framework.apiTestCases.CartTests#testGetCartsSortedAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.framework.apiTestCases.CartTests#testGetCartsWithLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.framework.apiTestCases.CartTests#testGetUserCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.framework.apiTestCases.CartTests#testUpdateCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
